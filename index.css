@@ -121,9 +121,18 @@ section .col {
 #hamburger {
   cursor:pointer;
 }
+
 @media (max-width: 575.98px) { 
   .head {
     width:100%;
+  }
+
+  .body {
+    width:100%;
+  }
+
+  section.content.row.bottom{
+    flex-direction:column;
   }
 }
 
@@ -131,11 +140,27 @@ section .col {
   .head {
     width:100%;
   }
+
+  .body {
+    width:100%;
+  }
+
+  section.content.row.bottom{
+    flex-direction:column;
+  }
 }
 
 @media (min-width: 768px) {
   .head {
     width:60%;
+  }
+
+  .body {
+    width:50%;
+  }
+
+  section.content.row.bottom{
+    flex-direction:row;
   }
 }
 
@@ -143,10 +168,26 @@ section .col {
   .head {
     width:50%;
   }
+
+  .body {
+    width:50%;
+  }
+
+  section.content.row.bottom{
+    flex-direction:row;
+  }
 }
 
 @media (min-width: 1200px) {
   .head {
     width:50%;
+  }
+
+  .body {
+    width:50%;
+  }
+
+  section.content.row.bottom{
+    flex-direction:row;
   }
 }
